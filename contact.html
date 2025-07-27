@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AETHER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AETHER</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#product-list">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#" aria-label="Open cart" aria-haspopup="dialog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section fade-in-up">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="contact-intro">We'd love to hear from you. Whether you have a question about our products, your order, or anything else, our team is ready to answer all your questions.</p>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h3>Send us a message</h3>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                            <div id="form-status"></div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Our Information</h3>
+                        <p><strong>Address:</strong><br>123 Artistry Avenue<br>Mumbai, Maharashtra 400001<br>India</p>
+                        <p><strong>Email:</strong><br><a href="mailto:hello@aether.com">hello@aether.com</a></p>
+                        <p><strong>Phone:</strong><br>+91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-left">
+                    <h3>AETHER</h3>
+                    <p>Timeless designs for modern living.</p>
+                </div>
+                <div class="footer-right">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Receive updates on new arrivals and special offers.</p>
+                    <form class="newsletter-form">
+                        <label for="newsletter-email-contact" class="visually-hidden">Email for newsletter</label>
+                        <input id="newsletter-email-contact" type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AETHER. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-panel-overlay"></div>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-heading" aria-hidden="true">
+        <div class="cart-panel-header">
+            <h2 id="cart-heading">Your Cart</h2>
+            <button class="close-cart-btn" aria-label="Close cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-list"></div>
+        <div class="cart-panel-footer">
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+        </div>
+    </aside>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+
+    <a href="#" class="back-to-top-btn" title="Back to Top" aria-label="Back to top">&uarr;</a>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER - Home Decor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AETHER</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#product-list">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#" aria-label="Open cart" aria-haspopup="dialog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in-up">Timeless Designs for Modern Living</h1>
+                <p class="fade-in-up">Discover our curated collection of home decor essentials.</p>
+                <a href="#" class="btn fade-in-up">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="product-grid fade-in-up">
+            <div class="container">
+                <h2 class="fade-in-up">Our Products</h2>
+                <div id="product-list" class="products">
+                    <!-- Products will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-left">
+                    <h3>AETHER</h3>
+                    <p>Timeless designs for modern living.</p>
+                </div>
+                <div class="footer-right">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Receive updates on new arrivals and special offers.</p>
+                    <form class="newsletter-form">
+                            <label for="newsletter-email" class="visually-hidden">Email for newsletter</label>
+                            <input id="newsletter-email" type="email" placeholder="Your Email" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <p>&copy; 2025 AETHER. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-panel-overlay"></div>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-heading" aria-hidden="true">
+        <div class="cart-panel-header">
+            <h2 id="cart-heading">Your Cart</h2>
+            <button class="close-cart-btn" aria-label="Close cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-list">
+            <!-- Cart items will be injected here -->
+        </div>
+        <div class="cart-panel-footer">
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+        </div>
+    </aside>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+
+    <a href="#" class="back-to-top-btn" title="Back to Top" aria-label="Back to top">&uarr;</a>
+</body>
+</html>

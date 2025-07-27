@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AETHER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AETHER</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#product-list">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#" aria-label="Open cart" aria-haspopup="dialog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section fade-in-up">
+            <div class="container">
+                <h2>About AETHER</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjE3NjU1NjU4&ixlib=rb-1.2.1&q=80&w=1080" alt="Bright, minimalist room with a white armchair, a small wooden table with a vase, and a large plant.">
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Philosophy</h3>
+                        <p>At AETHER, we believe that a well-designed space can transform your daily life. We are passionate about curating a collection of home decor that is both beautiful and functional, timeless and modern. Our philosophy is rooted in the principles of minimalism, quality craftsmanship, and sustainable design.</p>
+                        <h3>Our Story</h3>
+                        <p>AETHER was founded in 2025 with a simple idea: to make exceptional design accessible. What started as a small, curated online shop has grown into a destination for design lovers seeking to create spaces that inspire them. Each piece in our collection is hand-selected for its quality, aesthetic, and the story it tells.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-left">
+                    <h3>AETHER</h3>
+                    <p>Timeless designs for modern living.</p>
+                </div>
+                <div class="footer-right">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Receive updates on new arrivals and special offers.</p>
+                    <form class="newsletter-form">
+                        <label for="newsletter-email-about" class="visually-hidden">Email for newsletter</label>
+                        <input id="newsletter-email-about" type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <p>&copy; 2025 AETHER. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-panel-overlay"></div>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-heading" aria-hidden="true">
+        <div class="cart-panel-header">
+            <h2 id="cart-heading">Your Cart</h2>
+            <button class="close-cart-btn" aria-label="Close cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-list"></div>
+        <div class="cart-panel-footer">
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+        </div>
+    </aside>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+
+    <a href="#" class="back-to-top-btn" title="Back to Top" aria-label="Back to top">&uarr;</a>
+</body>
+</html>

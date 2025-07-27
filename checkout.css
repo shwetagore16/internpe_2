@@ -1,0 +1,91 @@
+/* Checkout Page Specific Styles */
+
+.checkout-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.checkout-form {
+    flex: 2;
+}
+
+.order-summary {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.checkout-form h2, .order-summary h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+#summary-cart-items .cart-item {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+#summary-cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+#summary-cart-items .cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+#summary-cart-items .cart-item-info {
+    flex-grow: 1;
+}
+
+#summary-cart-items .cart-item-info h4 {
+    margin: 0 0 0.25rem;
+    font-size: 0.9rem;
+}
+
+#summary-cart-items .cart-item-info .price {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+}
+
+#place-order-btn {
+    width: 100%;
+    margin-top: 1.5rem;
+}
